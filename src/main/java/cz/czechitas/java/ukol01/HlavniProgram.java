@@ -31,7 +31,7 @@ public class HlavniProgram {
         zofka.move(150);
         zofka.turnRight(90);
         zofka.move(40);
-    zofka.turnLeft(180);
+        zofka.turnLeft(180);
         nakresiI();
         nakresliV();
         nakresliE();
