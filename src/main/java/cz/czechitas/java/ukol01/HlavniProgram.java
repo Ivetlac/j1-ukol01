@@ -20,18 +20,85 @@ public class HlavniProgram {
         zofka.turnRight(180);
         zofka.penDown();
         nakresliPrasatko();
+        posunNaSlnko();
+        vytvorSlnko();
+        zofka.turnLeft(173);
+        zofka.move(220);
+        zofka.turnLeft(90);
+        domceky();
+        zofka.penUp();
+        zofka.turnLeft(45);
+        zofka.move(150);
+        zofka.turnRight(90);
+        zofka.move(40);
+    zofka.turnLeft(180);
+        nakresiI();
+        nakresliV();
+        nakresliE();
+        nakresliT();
+    }
+
+    private void posunNaSlnko() {
         zofka.penUp();
         zofka.turnLeft(90);
         zofka.move(450);
         zofka.turnLeft(90);
         zofka.move(250);
         zofka.turnRight(90);
-        vytvorSlnko();
-        zofka.turnLeft(173);
-        zofka.move(220);
-        zofka.turnLeft(90);
-        domceky();
+    }
 
+    private void nakresiI() {
+        zofka.penDown();
+        zofka.setPenColor(Color.pink);
+        zofka.move(30);
+        zofka.turnRight(90);
+        zofka.penUp();
+        zofka.move(10);
+    }
+
+    private void nakresliV() {
+        zofka.setPenColor(Color.lightGray);
+        zofka.penDown();
+        zofka.turnRight(55);
+        zofka.move(35);
+        zofka.turnLeft(110);
+        zofka.move(35);
+        zofka.turnRight(55);
+        zofka.penUp();
+        zofka.move(10);
+    }
+
+    private void nakresliE() {
+        zofka.setPenColor(Color.black);
+        zofka.penDown();
+
+        for (int i = 0; i < 2; i++) {
+            zofka.move(10);
+            zofka.turnRight(180);
+            zofka.move(10);
+            zofka.turnLeft(90);
+            zofka.move(15);
+            zofka.turnLeft(90);
+        }
+
+        zofka.move(10);
+        zofka.turnRight(180);
+        zofka.move(10);
+        zofka.turnLeft(180);
+        zofka.penUp();
+        zofka.move(35);
+        zofka.turnLeft(90);
+    }
+
+    private void nakresliT() {
+        zofka.penDown();
+        zofka.setPenColor(Color.magenta);
+        zofka.move(30);
+        zofka.turnRight(90);
+        zofka.move(10);
+        zofka.turnRight(180);
+        zofka.move(20);
+        zofka.penUp();
     }
 
     private void domceky() {
@@ -118,7 +185,7 @@ public class HlavniProgram {
 
     public void nakresliDomcek() {
         zofka.penDown();
-        zofka.setPenColor(Color.CYAN);
+        zofka.setPenColor(Color.cyan);
         for (int i = 0; i < 4; i++) {
             zofka.penDown();
             zofka.move(150);
