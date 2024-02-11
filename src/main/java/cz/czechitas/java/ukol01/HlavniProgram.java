@@ -12,26 +12,26 @@ public class HlavniProgram {
     }
 
     public void start() {
-      zofka = new Turtle();
-        zofka.setPenColor(Color.pink);
-        zofka.penUp();
-        zofka.turnRight(180);
-        zofka.move(250);
-        zofka.turnRight(180);
-        zofka.penDown();
-        nakresliPrasatko();
-        posunNaSlnko();
-        vytvorSlnko();
-        zofka.turnLeft(173);
-        zofka.move(220);
-        zofka.turnLeft(90);
-        domceky();
-        zofka.penUp();
-        zofka.turnLeft(45);
-        zofka.move(150);
-        zofka.turnRight(90);
-        zofka.move(40);
-        zofka.turnLeft(180);
+        zofka = new Turtle();
+//        zofka.setPenColor(Color.pink);
+//        zofka.penUp();
+//        zofka.turnRight(180);
+//        zofka.move(250);
+//        zofka.turnRight(180);
+//        zofka.penDown();
+//        nakresliPrasatko();
+//        posunNaSlnko();
+//        vytvorSlnko();
+//        zofka.turnLeft(173);
+//        zofka.move(220);
+//        zofka.turnLeft(90);
+//        domceky();
+//        zofka.penUp();
+//        zofka.turnLeft(45);
+//        zofka.move(150);
+//        zofka.turnRight(90);
+//        zofka.move(40);
+//        zofka.turnLeft(180);
         nakresiI();
         nakresliV();
         nakresliE();
@@ -53,22 +53,26 @@ public class HlavniProgram {
         zofka.move(30);
         zofka.turnRight(90);
         zofka.penUp();
-        zofka.move(10);
+        zofka.turnRight(90);
+        zofka.move(30);
+        zofka.turnLeft(90);
+        zofka.move(25);
     }
 
     private void nakresliV() {
         zofka.setPenColor(Color.lightGray);
         zofka.penDown();
-        zofka.turnRight(55);
-        zofka.move(35);
-        zofka.turnLeft(110);
-        zofka.move(35);
-        zofka.turnRight(55);
+        zofka.turnLeft(105);
+        zofka.move(32);
+        zofka.turnRight(180);
+       zofka.move(32);
+        zofka.turnLeft(140);
+        zofka.move(32);
         zofka.penUp();
-        zofka.turnRight(90);
+        zofka.turnRight(157);
         zofka.move(31);
         zofka.turnLeft(90);
-        zofka.move(10);
+        zofka.move(15);
     }
 
     private void nakresliE() {
