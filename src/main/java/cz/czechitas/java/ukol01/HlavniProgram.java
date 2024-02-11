@@ -12,7 +12,7 @@ public class HlavniProgram {
     }
 
     public void start() {
-        zofka = new Turtle();
+      zofka = new Turtle();
         zofka.setPenColor(Color.pink);
         zofka.penUp();
         zofka.turnRight(180);
@@ -65,6 +65,9 @@ public class HlavniProgram {
         zofka.move(35);
         zofka.turnRight(55);
         zofka.penUp();
+        zofka.turnRight(90);
+        zofka.move(31);
+        zofka.turnLeft(90);
         zofka.move(10);
     }
 
@@ -74,11 +77,11 @@ public class HlavniProgram {
 
         for (int i = 0; i < 2; i++) {
             zofka.move(10);
-            zofka.turnRight(180);
+            zofka.turnLeft(180);
             zofka.move(10);
-            zofka.turnLeft(90);
+            zofka.turnRight(90);
             zofka.move(15);
-            zofka.turnLeft(90);
+            zofka.turnRight(90);
         }
 
         zofka.move(10);
@@ -87,13 +90,15 @@ public class HlavniProgram {
         zofka.turnLeft(180);
         zofka.penUp();
         zofka.move(35);
-        zofka.turnLeft(90);
+        zofka.turnRight(90);
+        zofka.move(31);
+        zofka.turnRight(180);
     }
 
     private void nakresliT() {
         zofka.penDown();
         zofka.setPenColor(Color.magenta);
-        zofka.move(30);
+        zofka.move(35);
         zofka.turnRight(90);
         zofka.move(10);
         zofka.turnRight(180);
